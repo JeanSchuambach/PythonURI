@@ -1,0 +1,9 @@
+X = int(input())
+Y = int(input())
+
+if X%2!=0:
+    Soma = X
+if Y%2!=0:
+    Soma = Soma+Y
+    
+print(Soma, end='\n')
