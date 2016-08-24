@@ -1,23 +1,20 @@
-cont = 1
-impar = 0
 pares = 0
-Pos = 0
-Neg = 0
+impares = 0
+i = 0
+pos = 0
+neg = 0
 
-while(cont<=5):
-    x = int(input())
-    if x%2==0:
-        pares = pares + 1
+#codigo
+while i != 5:
+    a = int(input())
+    if a % 2 == 0:
+        pares = pares+1
     else:
-        impar = impar + 1
-    if x > 0:
-       Pos = Pos + 1
+        impares = impares+1
+    if a > 0:
+        pos = pos+1
     else:
-        Neg = Neg + 1
-    cont = cont + 1
-
-
-print("%i valor(es) par(es)" %pares, end='\n')
-print("%i valor(es) impar(es)" %impar, end='\n')
-print("%i valor(es) positivo(s)" %Pos, end='\n')
-print("%i valor(es) negativo(s)" %(Neg-1), end='\n')
+        neg = neg+1
+    i = i+1
+        
+print('%i valor(es) par(es)\n%i valor(es) impar(es)\n%i valor(es) positivo(s)\n%i valor(es) negativo(s)'%(pares, impares, pos ,neg), end='\n')
